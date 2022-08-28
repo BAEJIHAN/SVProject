@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{d5448e73-4cbb-4062-b278-1c8fc19862cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{0b81de5e-0a7a-46bc-88ce-fa6ae60ad979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{f67f3321-e397-4761-93ab-699417bb796d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{7e022f86-157e-441f-9bc8-2f8f56bca94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PublicHeader">
+      <UniqueIdentifier>{95823369-2d83-4b96-962c-9cb7539162a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{93adb182-66d7-42ad-bf09-7818d8672710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{3b24ae14-c76b-4c01-b97c-dc09f8f6157e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{0edf3aed-442b-4fe4-a54d-4609e08b779b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{3a6bb455-c2fe-4999-8144-49f4e04ea908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\FMOD">
+      <UniqueIdentifier>{413f4129-c303-454d-82ee-b37c01c9bada}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mystring.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPath.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDirectory.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDebug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMemory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBasePublic.h">
+      <Filter>PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTimer.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MyInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTimeEventer.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFSM.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="MyObjectBase.h" />
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_errors.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_output.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod.hpp">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_codec.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_common.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_dsp.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\API35\GameEngineBase\fmod_dsp_effects.h">
+      <Filter>Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="MySound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Mystring.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPath.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDirectory.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDebug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMemory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTimer.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MyInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MyObjectBase.cpp" />
+    <ClCompile Include="MySound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="MyPlayer.cpp">
+      <Filter>Contents\Actor\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTileBackGround.cpp">
+      <Filter>Contents\Actor\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPlayerState.cpp">
+      <Filter>Contents\Actor\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLogicValue.cpp" />
+    <ClCompile Include="FarmBg.cpp">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="HouseBg.cpp">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreBg.cpp">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="TownBg.cpp">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadBg.cpp">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmScene.cpp">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="HouseScene.cpp">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadScene.cpp">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TownScene.cpp">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreScene.cpp">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeInActor.cpp">
+      <Filter>Contents\Actor\FadeActor</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeOutActor.cpp">
+      <Filter>Contents\Actor\FadeActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Crop.cpp">
+      <Filter>Contents\Actor\Objects\Crop</Filter>
+    </ClCompile>
+    <ClCompile Include="radish.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="potato.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolUI.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherBase.cpp">
+      <Filter>Contents\Actor\Objects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Contents\Actor\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseObject.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp">
+      <Filter>Contents\Actor\Objects\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreList.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEditorScene.cpp">
+      <Filter>Contents\Scene\EditorScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EditUI.cpp">
+      <Filter>Contents\Scene\EditorScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Stone1.cpp">
+      <Filter>Contents\Actor\Objects\Other\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="Stone2.cpp">
+      <Filter>Contents\Actor\Objects\Other\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass1.cpp">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass2.cpp">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass3.cpp">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass4.cpp">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Selected.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="cabbage.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="BagUI.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldItem.cpp">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="StoneItem.cpp">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassItem.cpp">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeItem.cpp">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="eggplant.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="tomato.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="blueberry.cpp">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTitleScene.cpp">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround.cpp">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="cloud1.cpp">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="cloud2.cpp">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="EnergyUI.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HouseColmapImage.cpp">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmColmapImage.cpp">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClCompile>
+    <ClCompile Include="RoadColmapImage.cpp">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreColmapImage.cpp">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClCompile>
+    <ClCompile Include="TownColmapImage.cpp">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="MyPlayer.h">
+      <Filter>Contents\Actor\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTileBackGround.h">
+      <Filter>Contents\Actor\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLogicValue.h" />
+    <ClInclude Include="FarmBg.h">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="HouseBg.h">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreBg.h">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="TownBg.h">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="RoadBg.h">
+      <Filter>Contents\Scene\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmScene.h">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="HouseScene.h">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="RoadScene.h">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TownScene.h">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreScene.h">
+      <Filter>Contents\Scene\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeInActor.h">
+      <Filter>Contents\Actor\FadeActor</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeOutActor.h">
+      <Filter>Contents\Actor\FadeActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Crop.h">
+      <Filter>Contents\Actor\Objects\Crop</Filter>
+    </ClInclude>
+    <ClInclude Include="radish.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="potato.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolUI.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="OtherBase.h">
+      <Filter>Contents\Actor\Objects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Contents\Actor\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseObject.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>Contents\Actor\Objects\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreList.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEditorScene.h">
+      <Filter>Contents\Scene\EditorScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EditUI.h">
+      <Filter>Contents\Scene\EditorScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Stone1.h">
+      <Filter>Contents\Actor\Objects\Other\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="Stone2.h">
+      <Filter>Contents\Actor\Objects\Other\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass1.h">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass2.h">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass3.h">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass4.h">
+      <Filter>Contents\Actor\Objects\Other\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Selected.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="cabbage.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="BagUI.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldItem.h">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="StoneItem.h">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassItem.h">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeItem.h">
+      <Filter>Contents\Actor\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="eggplant.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="tomato.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="blueberry.h">
+      <Filter>Contents\Actor\Objects\Crop\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTitleScene.h">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround.h">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="cloud1.h">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="cloud2.h">
+      <Filter>Contents\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="EnergyUI.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HouseColmapImage.h">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmColmapImage.h">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClInclude>
+    <ClInclude Include="RoadColmapImage.h">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreColmapImage.h">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClInclude>
+    <ClInclude Include="TownColmapImage.h">
+      <Filter>Contents\Scene\BackGround\Colmap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{182638a3-0aca-443f-bc15-3932058d3496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor">
+      <UniqueIdentifier>{6bd545e1-3fbb-4303-9d53-0bd4409f608d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene">
+      <UniqueIdentifier>{2ee73a95-eb00-4cba-8b02-7e5795484a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\PlayScene">
+      <UniqueIdentifier>{43dd6822-78ca-4b88-909e-4e973dd1188c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\BackGround">
+      <UniqueIdentifier>{00c38a31-37d7-4e7b-bdcf-5389923d3c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\Map">
+      <UniqueIdentifier>{0b9be3c8-7bb0-4d4f-83c1-cf4bbfa0a9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\FadeActor">
+      <UniqueIdentifier>{112fe6b0-8686-4d28-97c8-b122082fd149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects">
+      <UniqueIdentifier>{f9450556-4a53-4740-99e8-4a779f706a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Crop">
+      <UniqueIdentifier>{4c50c5c2-bad2-4623-b625-3e1b230028ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Crop\Sub">
+      <UniqueIdentifier>{bc4f2ad6-04b9-4756-b5c3-8b5b7d923799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\UI">
+      <UniqueIdentifier>{da3347af-91ce-4bed-9f9c-2636a2939b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Other">
+      <UniqueIdentifier>{19125969-c0b4-4a9a-be17-95d6b5ac32a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Inventory">
+      <UniqueIdentifier>{304da467-776f-4ef2-8bfd-e8f64c270a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Other\Grass">
+      <UniqueIdentifier>{26093ce4-1d7c-4094-9e60-135f8f762e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Other\Stone">
+      <UniqueIdentifier>{ee658d08-58b1-4ebb-95aa-c79a08b61068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Objects\Item">
+      <UniqueIdentifier>{080926f1-a429-4334-a55a-b930ac02ee7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\Title">
+      <UniqueIdentifier>{9cc94d06-c42c-4cab-98d3-62f8ea9ea559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\EditorScene">
+      <UniqueIdentifier>{1358e2e8-d5ce-4a3b-b384-3a9ea8eb1d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\BackGround\Colmap">
+      <UniqueIdentifier>{81c4df12-7784-424b-a115-680b01d28d03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

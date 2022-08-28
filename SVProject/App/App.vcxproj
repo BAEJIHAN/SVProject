@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b488d864-6a9c-4031-b5a1-09d72560d65d}</ProjectGuid>
+    <RootNamespace>App</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\Base\;..\Platform\;..\Client\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\Base\;..\Platform\;..\Client\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BagUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="blueberry.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="cabbage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="cloud1.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="cloud2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Crop.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EditUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="eggplant.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EnergyUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FadeInActor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FadeOutActor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FarmBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FarmColmapImage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FarmScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FieldItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Grass1.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Grass2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Grass3.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Grass4.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GrassItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HouseBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HouseColmapImage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HouseScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MouseObject.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MyEditorScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MyLogicValue.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MyPlayer.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MyPlayerState.cpp" />
+    <ClCompile Include="MyTileBackGround.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MyTitleScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="OtherBase.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="potato.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="radish.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RoadBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RoadColmapImage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RoadScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Selected.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Stone1.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Stone2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StoneItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StoreBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StoreColmapImage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StoreList.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StoreScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="tomato.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ToolUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TownBg.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TownColmapImage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TownScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="TreeItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BagUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="blueberry.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="cabbage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="cloud1.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="cloud2.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Crop.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EditUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="eggplant.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EnergyUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FadeInActor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FadeOutActor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FarmBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FarmColmapImage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FarmScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FieldItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Grass1.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Grass2.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Grass3.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Grass4.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GrassItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HouseBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HouseColmapImage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HouseScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MouseObject.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MyEditorScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MyLogicValue.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MyPlayer.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MyTileBackGround.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MyTitleScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="OtherBase.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="potato.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="radish.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoadBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoadColmapImage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RoadScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Selected.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stone1.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stone2.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StoneItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StoreBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StoreColmapImage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StoreList.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StoreScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="tomato.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ToolUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TownBg.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TownColmapImage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TownScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="TreeItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
